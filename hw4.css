@@ -1,0 +1,32 @@
+h1 {
+    color: blue
+}
+
+.redClass {
+    color: red;
+    text-align: right;
+}
+
+#uniqueID {
+    color: purple;
+    text-align: center;
+}
+
+/*Divided sections have 2px border*/
+div {
+    /*Change at least two box model properties of any tag, class, or id. */
+    border: 2px purple;
+    margin: 5px;
+    width: 300px;
+}
+
+/*Gives tag <a> blue color*/
+a {
+    color: blue;
+}
+
+/*Use a CSS selector to change the color of <a> when you hover the cursor over it.*/
+/*If you just wait to do it for some of them, you have to use an ID selector*/
+a:hover {
+    color: purple;
+}
