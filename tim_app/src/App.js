@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from '@mui/material/Button';
-import Walter from './Walter.jpg'; /*Import image to be able to use it*/
+import Fourier from './Fourier.png'; /*Import image to be able to use it*/
 
 /*Additional image component*/
 function Image(){
   return (
-    <img src={Walter} alt="Component added to App.js"/>
+    <img src={Fourier} alt="Component added to App.js"/>
   );
 }
 
@@ -22,16 +22,16 @@ function Child({ param }){
 function Parent(){
   return (
     <h3>
-      <h2>Display child data:</h2>  
-      <Child param={"Child1"}/>  
-      <Child param={"Child2"}/>  
+      <h2>Display projects:</h2>  
+      <Child param={"Project 1"}/>  
+      <Child param={"Project 2"}/>  
     </h3>
   );
 }
 
 /*Action handler for button*/
 function action(){
-  alert('Button Pressed');
+  alert('User Authorized');
 }
 
 /*This function defines front end web page (different from task 1) */
@@ -43,7 +43,7 @@ function App() {
     <div>
       <Image />
       <Image />
-      <Button onClick={action} variant="contained">Button</Button>
+      <Button onClick={action} variant="contained">Press to authorize user</Button>
       <Parent />
     </div>
   );
