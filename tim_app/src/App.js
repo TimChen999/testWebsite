@@ -29,6 +29,24 @@ function Parent(){
   );
 }
 
+function Parent2(){
+  return (
+    <h3>
+      <h2>Display projects:</h2>  
+      <Child2 param={"Project 3"}/>  
+      <Child2 param={"Project 4"}/>  
+    </h3>
+  );
+}
+
+function Child2({ param }){
+  return (
+    <h4>
+      {param}
+    </h4>
+  );
+}
+
 /*Action handler for button*/
 function action(){
   alert('User Authorized');
@@ -46,6 +64,7 @@ function App() {
       <Button onClick={action} variant="contained">Press to authorize user</Button>
       <TextField id="outlined-basic" label="Enter text" variant="outlined" />
       <Parent />
+      <Parent2 />
     </div>
   );
 }
