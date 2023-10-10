@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 import Fourier from './Fourier.png'; /*Import image to be able to use it*/
 
 /*Additional image component*/
@@ -32,7 +33,7 @@ function Parent(){
 function Parent2(){
   return (
     <h3>
-      <h2>Display projects:</h2>  
+      <h3>Display additional projects:</h3>  
       <Child2 param={"Project 3"}/>  
       <Child2 param={"Project 4"}/>  
     </h3>
